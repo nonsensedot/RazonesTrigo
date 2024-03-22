@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora Trigonométrica</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <article class="angulo">
+      <div class="calculator">
+        <h2>Calculadora Trigonométrica por Angulo</h2>
+        <form id="trigForm">
+          <label for="angle">Ángulo (en grados):</label>
+          <input type="number" id="angle" name="angle" required />
+
+          <button type="submit">Calcular</button>
+        </form>
+        <div id="results">
+          <h3>Resultados</h3>
+          <p>Seno: <span id="sin"></span></p>
+          <p>Coseno: <span id="cos"></span></p>
+          <p>Tangente: <span id="tan"></span></p>
+        </div>
+      </div>
+      <div class="calculator">
+        <h3>Manual De Uso</h3>
+        <p>
+         Con esta herramienta, puedes ingresar cualquier ángulo y el programa calculará automáticamente el seno, coseno y tangente de ese ángulo. Simplemente ingresa el valor del ángulo en grados y obtén al instante los resultados que necesitas. ¡Es fácil y rápido! Explora el mundo de la trigonometría con nuestra calculadora.
+        </p>
+      </div>
+    </article>
+
+    <article class="angulo">
+      <div class="calculator">
+        <h2>Calculadora Trigonométrica por Razones</h2>
+      </div>
+
+      <div class="calculator values">
+        <div>
+          <div class="input-wrapper">
+            <label for="sin">Cat. Opuesto:</label>
+            <input type="number" id="opu" step="any" />
+          </div>
+          <div class="input-wrapper">
+            <label for="cos">Cat. Adyacente:</label>
+            <input type="number" id="ady" step="any" />
+          </div>
+          <div class="input-wrapper">
+            <label for="tan">Hipotenusa:</label>
+            <input type="number" id="hip" step="any" />
+          </div>
+          <button onclick="calcular()">Calcular</button>
+        </div>
+        <div>
+          <img
+            src="./Img/Razones-trigonométricas-en-el-triángulo-rectángulo-1-300x190.jpg"
+            alt=""
+            srcset=""
+          />
+        </div>
+      </div>
+
+      <div class="calculator">
+        <div id="results">
+          <h3>Resultados</h3>
+          <p>Seno: <span id="result-sin"></span></p>
+          <p>Coseno: <span id="result-cos"></span></p>
+          <p>Tangente: <span id="result-tan"></span></p>
+        </div>
+      </div>
+
+
+      <div class="calculator">
+        <h3>Manual De Uso</h3>
+        <p>
+          Esta herramienta te permite ingresar la longitud de cualquiera de los lados de un triángulo rectángulo y te proporcionará el resultado del seno, coseno o tangente del ángulo correspondiente. Solo ingresa la longitud del lado deseado y selecciona la función trigonométrica que necesitas calcular. ¡Descubre los valores que necesitas de forma rápida y sencilla con nuestra calculadora!
+        </p>
+      </div>
+      <div class="calculator calEcuaciones">
+        <div>
+          <h3>Ecuaciones</h3>
+          <div class="process">
+            <span
+              >Seno (<span class="numerator">ángulo</span>) =
+              <span class="numerator">opuesto</span> /
+              <span class="denominator">hipotenusa</span></span
+            >
+          </div>
+          <div class="process">
+            <span
+              >Coseno (<span class="numerator">ángulo</span>) =
+              <span class="numerator">adyacente</span> /
+              <span class="denominator">hipotenusa</span></span
+            >
+          </div>
+          <div class="process">
+            <span
+              >Tangente (<span class="numerator">ángulo</span>) =
+              <span class="numerator">opuesto</span> /
+              <span class="denominator">adyacente</span></span
+            >
+          </div>
+        </div>
+    </article>
+
+    <script src="script.js"></script>
+  </body>
+</html>

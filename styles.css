@@ -1,0 +1,127 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding-top: 20px;
+}
+
+.calculator {
+  background-color: #ffffff;
+  padding: 20px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-top: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input[type="number"] {
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#results {
+  margin-top: 20px;
+}
+
+#results h3 {
+  margin-top: 0;
+}
+
+#results p {
+  margin-bottom: 5px;
+}
+
+.process {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.process span {
+  display: inline-block;
+}
+
+.process .numerator {
+  font-size: smaller;
+  margin-bottom: -3px;
+}
+
+.process .denominator {
+  font-size: smaller;
+  margin-top: -3px;
+}
+
+.process .fraction-bar {
+  border-top: 1px solid #000;
+  margin: 0 2px;
+}
+
+.calEcuaciones {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-top: 150px solid transparent; /* Altura del triángulo */
+  border-right: 150px solid black; /* Base del triángulo */
+}
+
+article {
+  margin: 20px;
+}
+
+.values {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-wrapper {
+  margin-bottom: 10px;
+}
+
+.input-wrapper label {
+  margin-right: 5px;
+}
+
+.values img {
+  width: 250px;
+}
+
+.angulo {
+  flex: 1;
+  max-width: 750px;
+}
